@@ -27,8 +27,8 @@ class TableViewController: UITableViewController {
         let urlString = "http://jsonplaceholder.typicode.com/users"
         let urlEncodedString = urlString.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
         let url = NSURL( string: urlEncodedString!)
-        var task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, innerError) in
-            let json = JSON(data: data)
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, innerError) in
+            let json = JSON(data: data!)
             let contactsArray = json.arrayValue
             
             dispatch_async(dispatch_get_main_queue(), {
@@ -36,7 +36,7 @@ class TableViewController: UITableViewController {
                 {
                     let id = contacts["id"].stringValue
                     let name = contacts["name"].stringValue
-                    println( "id: \(id) name: \(name)" )
+                    print( "id: \(id) name: \(name)" )
                     self.tableName.append(name)
                     self.tableID.append(id)
                 }
