@@ -162,6 +162,8 @@
 		044FA4371B00B3A0005749EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Variya Soft Solutions";
 				TargetAttributes = {
@@ -417,6 +419,7 @@
 				044FA4601B00B3A0005749EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		044FA4611B00B3A0005749EA /* Build configuration list for PBXNativeTarget "testingJSONTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +428,7 @@
 				044FA4631B00B3A0005749EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
